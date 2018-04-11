@@ -2,6 +2,7 @@
 
 #insall dependencies
 apt-get update
+apt-get install -y python3-pip
 apt-get install -y python3-setuptools
 apt-get install -y mysql-server
 apt-get install -y mysql-client
@@ -17,17 +18,12 @@ pip3 install MySQL-python
 pip3 install SQLAlchemy
 
 
-
-
-
-
-
-#Download requirements and create and populate database
-python3 setup.py install
-
-
+#create database
 python3 draft_create_db.py
 
+#populate database
 python3 draft_insert_db.py
 
-#FLASK_APP=draft_api.py python3 -m flask run --host=0.0.0.0 --port=5000
+
+#start API
+FLASK_APP=draft_api.py python3 -m flask run --host=0.0.0.0 --port=5000
