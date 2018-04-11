@@ -1,0 +1,14 @@
+{
+    "Baseball": {
+        "name_brief": "1",
+        "url": "http://api.cbssports.com/fantasy/players/list?version=3.0&SPORT=baseball&response_format=JSON"
+    },
+    "Basketball": {
+        "name_brief": "3",
+        "url": "http://api.cbssports.com/fantasy/players/list?version=3.0&SPORT=basketball&response_format=JSON"
+    },
+    "Football": {
+        "name_brief": "2",
+        "url": "http://api.cbssports.com/fantasy/players/list?version=3.0&SPORT=football&response_format=JSON"
+    }
+}
