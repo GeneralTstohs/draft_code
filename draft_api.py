@@ -59,7 +59,7 @@ class getSport(Resource):
 	def get(self, sport):
 		self.sport = sport
 		player_list = []
-		result = session.query(Player).filter(upper(Player.sport) == upper(self.sport)).all()
+		result = session.query(Player).filter(Player.sport == self.sport).all()
 		for i in result:
 			player = {}
 			player = {'id':i.elias_id,
