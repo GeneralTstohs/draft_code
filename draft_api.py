@@ -76,8 +76,8 @@ class getSport(Resource):
 
 
 api.add_resource(getPlayer, '/draft/player/<string:name>') # Route_1
-api.add_resource(getSport, '/draft//sport/<string:sport>') #Route 2
+api.add_resource(getSport, '/draft/sport/<string:sport>') #Route 2
 
 
 if __name__=='__main__':
-	app.run(debug=True)
+	app.run(debug=False)
